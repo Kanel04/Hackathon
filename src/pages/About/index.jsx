@@ -1,18 +1,9 @@
-import React, { useEffect } from "react";
-import { useSnapshot } from "valtio";
-import Input from "../../components/Input";
-import { MainLayout } from "../../layouts/main";
-import { states } from "../../states";
+import React from 'react'
 
-const AboutPage = () => {
-  useEffect(() => {
-    states.selectedLink = "about";
-  }, []);
+function AboutPage() {
   return (
-    <MainLayout>
-      <Input />
-    </MainLayout>
-  );
-};
+    <div>AboutPage</div>
+  )
+}
 
-export default AboutPage;
+export default AboutPage

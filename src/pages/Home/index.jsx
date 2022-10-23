@@ -1,24 +1,14 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import { Button } from "../../components/Buttons";
-import Card from "../../components/Card";
-import Input from "../../components/Input";
-import Grid from "../../components/Grid";
-import { MainLayout } from "../../layouts/main";
-import Title from "../../components/Title";
-import Header from "./Header";
-import Engagements from "./Engagements";
-import { states } from "../../states";
+import React from 'react'
+import Header from './components/header'
+import Navbar from './components/navbar'
 
-export const HomePage = () => {
-  useEffect(() => {
-    states.selectedLink = "home";
-  }, []);
-
+function HomePage() {
   return (
-    <MainLayout>
-      <Header />
-      <Engagements />
-    </MainLayout>
-  );
-};
+    <div className='bg-[#f0f0f0]'>
+      <Navbar></Navbar>
+      <Header></Header>
+    </div>
+  )
+}
+
+export default HomePage
