@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AboutPage from "./pages/About/index";
 import ChoixPage from "./pages/Choix";
+import CoursePage from "./pages/Cours";
 import DonneurPage from "./pages/Donneur";
 import EnseignantPage from "./pages/Enseignant";
 import ErrorPage from "./pages/Error";
@@ -25,6 +26,7 @@ export const App = () => {
         <Route path="/investisseur" element={<InvestisseurPage />}></Route>
         <Route path="/etudiantdasbord" element={<DasbordPage />}></Route>
         <Route path="/enseignant" element={<EnseignantPage />}></Route>
+        <Route path="/cours" element={<CoursePage />}></Route>
         <Route path="*" element={<ErrorPage />}></Route>
       </Routes>
     </Router>
